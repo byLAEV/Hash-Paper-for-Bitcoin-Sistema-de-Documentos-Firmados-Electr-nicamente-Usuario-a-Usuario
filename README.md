@@ -1,0 +1,2 @@
+# Hash-Paper-for-Bitcoin-Sistema-de-Documentos-Firmados-Electr-nicamente-Usuario-a-Usuario
+Hash Paper es un sistema de certificación digital P2P que utiliza la red Bitcoin para crear pruebas irrefutables de autenticidad y unicidad de documentos. Cada archivo se registra mediante un hash en la blockchain, garantizando integridad, trazabilidad y protección contra duplicados o manipulaciones, sin depender de intermediarios.
