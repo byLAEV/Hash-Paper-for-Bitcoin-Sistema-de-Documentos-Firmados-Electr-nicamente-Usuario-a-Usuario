@@ -8,3 +8,6 @@ Document digest (sha256):
 225605aabcac6a4207d031b50e567555a5fa035b6ce7c7e634863e7231d63c62
 
 225605aabcac6a4207d031b50e567555a5fa035b6ce7c7e634863e7231d63c62a29607cd8c73a950cdc28bb5a21c4693
+
+ahi esta en el repositorio su firma digital y el archivo para verificar que es unico y de mi autoría
+.ots y .pdf 
