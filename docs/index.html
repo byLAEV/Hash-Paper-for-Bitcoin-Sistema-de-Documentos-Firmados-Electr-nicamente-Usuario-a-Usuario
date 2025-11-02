@@ -5,249 +5,363 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hash Paper for Bitcoin: Sistema de Documentos Firmados Electrónicamente Usuario-a-Usuario</title>
     <style>
+        /* Estilos CSS para el formato Whitepaper y centrado */
         body {
-            font-family: 'Times New Roman', serif;
+            font-family: 'Georgia', serif; /* Fuente clásica para whitepaper/documento */
             line-height: 1.6;
-            margin: 40px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0;
+            padding: 40px 20px;
+            background-color: #f7f7f7; /* Fondo gris claro de la página */
+            color: #333;
         }
-        h1, h2, h3, h4 {
-            font-family: Arial, sans-serif;
-            margin-top: 1.5em;
-            margin-bottom: 0.5em;
+
+        .container {
+            max-width: 800px; /* Ancho máximo del contenido (típico de un documento) */
+            margin: 0 auto; /* Centrar el contenedor */
+            background-color: #ffffff; /* Fondo blanco del whitepaper */
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave para destacar el documento */
+            border-radius: 8px;
         }
+
+        /* Títulos y Metadatos */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
         h1 {
-            text-align: center;
-            font-size: 24px;
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 10px;
         }
-        h2 {
-            font-size: 20px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-        }
-        h3 {
-            font-size: 18px;
-        }
+
         .authors {
-            text-align: center;
-            margin-bottom: 20px;
+            font-style: italic;
+            margin-bottom: 5px;
+            color: #555;
         }
-        .abstract {
-            margin: 20px 0;
+
+        .links {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Estilos para el cuerpo del documento */
+        h2 {
+            font-size: 1.6em;
+            color: #2c3e50;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.3em;
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .abstract-section {
+            background-color: #ecf0f1;
             padding: 20px;
-            border: 1px solid #eee;
-            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 5px solid #3498db;
         }
-        .abstract h2 {
-            border: none;
-            padding-bottom: 0;
-            text-align: center;
+
+        .abstract-section h2 {
+            border-bottom: none;
+            margin-top: 0;
+            font-size: 1.4em;
+            color: #3498db;
+        }
+        
+        /* Estilos para la lista (viñetas) */
+        ul {
+            list-style-type: decimal; /* Usar números para las listas del whitepaper */
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para las secciones de Conclusiones y Fecha */
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #bdc3c7;
+            text-align: right;
+            font-size: 0.9em;
+            color: #777;
         }
     </style>
 </head>
 <body>
 
-    <h1>Hash Paper for Bitcoin: Sistema de Documentos Firmados Electrónicamente Usuario-a-Usuario</h1>
+    <div class="container">
+        
+        <header>
+            <h1>Hash Paper for Bitcoin: Sistema de Documentos Firmados Electrónicamente Usuario-a-Usuario</h1>
+            
+            <p class="authors">
+                **LAEV & Satoshi Nakamoto**
+            </p>
+            <p class="authors">
+                byLAEV@protonmail.com<br>
+                satoshin@gmx.com <br>
+                akamoto@gmx.com 
+            </p>
+            <p class="links">
+                <a href="https://bylaev.github.io/Hash-Paper-for-Bitcoin-Sistema-de-Documentos-Firmados-Electr-nicamente-Usuario-a-Usuario/" target="_blank">https://bylaev.github.io/Hash-Paper-for-Bitcoin-Sistema-de-Documentos-Firmados-Electr-nicamente-Usuario-a-Usuario/</a>
+            </p>
+        </header>
 
-    <div class="authors">
-        <p><strong>LAEV & Satoshi Nakamoto</strong></p>
-        <p>byLAEV@protonmail.com</p>
-        <p>satoshin@gmx.com</p>
-        <p>akamoto@gmx.com</p>
-        <p><a href="http://www.hashpaper.org">www.hashpaper.org</a></p>
-    </div>
+        <section class="abstract-section">
+            <h2>Abstracto</h2>
+            <p>Hash Paper redefine la integridad de los documentos, sean digitales o en papel físico, mediante firmas electrónicas usuario-a-usuario. Cada documento genera un hash que se integra en una cadena de pruebas de trabajo, creando un registro inmutable de su existencia y secuencia. La red distribuida supera el Trilema de Blockchain, combinando seguridad, descentralización y escalabilidad sin concesiones, mientras los nodos pueden unirse y retirarse libremente. Extiende esta garantía al dinero fiat, firmando electrónicamente el papel moneda desde su origen, asegurando autenticidad y eliminando cualquier posibilidad de falsificación. Hash Paper no solo protege información: establece un estándar absoluto de confianza digital y física.</p>
+        </section>
 
-    <div class="abstract">
-        <h2>Abstracto</h2>
-        <p>Hash Paper redefine la integridad de los documentos, sean digitales o en papel físico, mediante firmas electrónicas usuario-a-usuario. Cada documento genera un hash que se integra en una cadena de pruebas de trabajo, creando un registro inmutable de su existencia y secuencia. La red distribuida supera el Trilema de Blockchain, combinando seguridad, descentralización y escalabilidad sin concesiones, mientras los nodos pueden unirse y retirarse libremente. Extiende esta garantía al dinero fiat, firmando electrónicamente el papel moneda desde su origen, asegurando autenticidad y eliminando cualquier posibilidad de falsificación. Hash Paper no solo protege información: establece un estándar absoluto de confianza digital y física.</p>
-    </div>
+        <h2>1. Introducción</h2>
+        <p>En la era digital, la autenticidad y validez de los documentos ha dependido tradicionalmente de intermediarios confiables: notarías, instituciones financieras o plataformas centralizadas. Estos guardianes, aunque funcionales, imponen fricciones, costos y riesgos de manipulación, limitando la posibilidad de que los usuarios gestionen sus documentos de manera directa y segura. Cada dependencia introduce incertidumbre, retrasos y vulnerabilidad ante el fraude o la alteración.</p>
+        <p>Hash Paper surge como una solución a esta limitación. Propone un sistema usuario-a-usuario de documentos firmados electrónicamente, donde cada documento —ya sea digital o impreso físicamente— puede ser asociado a un hash único registrado en la red de Bitcoin, garantizando integridad, inmutabilidad y prueba de existencia verificable de forma pública. Este enfoque elimina la necesidad de intermediarios, permitiendo que las partes interesadas gestionen y validen documentos directamente, con seguridad criptográfica.</p>
+        <p>El sistema asegura que los documentos sean resistentes a falsificaciones y manipulaciones, incluso si algunos participantes actúan de manera maliciosa. La confianza deja de ser una dependencia de terceros: emerge de la prueba criptográfica y del registro distribuido, creando un estándar donde cada documento posee un valor intrínseco, verificable y permanente.</p>
+        <p>Hash Paper no solo redefine la forma de firmar y validar documentos: transforma la relación entre usuarios y la información, otorgando verdad y seguridad al documento como su propiedad fundamental. Así, la tecnología se convierte en el garante de la autenticidad, y los usuarios recobran el control directo sobre sus transacciones documentales, sin intermediarios ni barreras de confianza</p>
 
-    <h2>1. Introducción</h2>
-    <p>En la era digital, la autenticidad y validez de los documentos ha dependido tradicionalmente de intermediarios confiables: notarías, instituciones financieras o plataformas centralizadas. Estos guardianes, aunque funcionales, imponen fricciones, costos y riesgos de manipulación, limitando la posibilidad de que los usuarios gestionen sus documentos de manera directa y segura. Cada dependencia introduce incertidumbre, retrasos y vulnerabilidad ante el fraude o la alteración.</p>
-    <p>Hash Paper surge como una solución a esta limitación. Propone un sistema usuario-a-usuario de documentos firmados electrónicamente, donde cada documento —ya sea digital o impreso físicamente— puede ser asociado a un hash único registrado en la red de Bitcoin, garantizando integridad, inmutabilidad y prueba de existencia verificable de forma pública. Este enfoque elimina la necesidad de intermediarios, permitiendo que las partes interesadas gestionen y validen documentos directamente, con seguridad criptográfica.</p>
-    <p>El sistema asegura que los documentos sean resistentes a falsificaciones y manipulaciones, incluso si algunos participantes actúan de manera maliciosa. La confianza deja de ser una dependencia de terceros: emerge de la prueba criptográfica y del registro distribuido, creando un estándar donde cada documento posee un valor intrínseco, verificable y permanente.</p>
-    <p>Hash Paper no solo redefine la forma de firmar y validar documentos: transforma la relación entre usuarios y la información, otorgando verdad y seguridad al documento como su propiedad fundamental. Así, la tecnología se convierte en el garante de la autenticidad, y los usuarios recobran el control directo sobre sus transacciones documentales, sin intermediarios ni barreras de confianza</p>
+        <h2>2. Transacciones</h2>
+        <p>Definimos un Hash Paper como un documento digital cuya validez se garantiza mediante un hash criptográfico registrado en la blockchain de Bitcoin. Cada propietario transfiere o actualiza el documento creando una nueva transacción que incluye el hash del documento previo, la identidad del remitente y la clave pública del receptor.</p>
+        <p>El problema es que un receptor no puede verificar si el documento ha sido registrado previamente en otra transacción, equivalente al doble-gasto en monedas digitales. En un sistema centralizado, un servidor confiable podría validar cada documento y emitir un registro único, pero esto introduce dependencia y riesgo de censura.</p>
+        <p>Para eliminar intermediarios, cada Hash Paper se publica públicamente en la blockchain. Esto permite a cualquier receptor verificar que el hash asociado no haya sido registrado previamente. La exclusividad se garantiza manteniendo un registro público de todas las transacciones, de modo que cada nueva transacción pueda compararse con las anteriores.</p>
+        <p>El orden y la integridad de las transacciones dependen del consenso de los nodos de la red Bitcoin. Un receptor puede confiar en que la transacción verificada fue incluida primero en la blockchain, asegurando que corresponde al documento original. La blockchain provee una prueba pública, inmutable y verificable del momento y secuencia de cada publicación.</p>
+        <p>De este modo, cada Hash Paper puede ser verificado por cualquier parte interesada sin recurrir a un tercero confiable, asegurando la unicidad, integridad y trazabilidad de los documentos digitales.</p>
+        
+        <h3>2.1 Transacciones en Hash Paper</h3>
+        <p>Definimos un Hash Paper como un documento digital cuya validez se garantiza mediante un hash criptográfico registrado en la blockchain de Bitcoin. Cada documento puede ser transferido o actualizado mediante una transacción que incluye el hash del documento previo, la identidad del remitente y la clave pública del receptor.</p>
+        <p>Al igual que en Bitcoin, el desafío principal es evitar duplicados: un receptor debe poder confirmar que el documento no ha sido registrado en otra transacción diferente, equivalente al problema del doble-gasto en monedas digitales. En Bitcoin, la red de nodos valida cada transacción y acuerda un orden único de inclusión en la blockchain; en Hash Paper, utilizamos el mismo principio: cada transacción de hash se publica en la blockchain y se valida mediante consenso de los nodos, asegurando que solo la primera publicación de un hash se considere válida.</p>
+        <p>Cada transacción de Hash Paper funciona como una “entrada” en Bitcoin: incluye la referencia al documento anterior y la firma digital del remitente, análoga a la firma de una transacción de BTC. La red de Bitcoin actúa como autoridad distribuida para confirmar que la publicación del hash fue la primera y que no existen registros duplicados.</p>
+        <p>De esta manera, los receptores pueden verificar públicamente la integridad, unicidad y autenticidad de cada documento sin depender de un servidor central. La blockchain de Bitcoin proporciona prueba inmutable del momento y la secuencia de cada publicación, replicando la funcionalidad de verificación y orden de Bitcoin para garantizar que cada Hash Paper tenga un registro único y verificable.</p>
 
-    <h2>2. Transacciones</h2>
-    <p>Definimos un Hash Paper como un documento digital cuya validez se garantiza mediante un hash criptográfico registrado en la blockchain de Bitcoin. Cada propietario transfiere o actualiza el documento creando una nueva transacción que incluye el hash del documento previo, la identidad del remitente y la clave pública del receptor.</p>
-    <p>El problema es que un receptor no puede verificar si el documento ha sido registrado previamente en otra transacción, equivalente al doble-gasto en monedas digitales. En un sistema centralizado, un servidor confiable podría validar cada documento y emitir un registro único, pero esto introduce dependencia y riesgo de censura.</p>
-    <p>Para eliminar intermediarios, cada Hash Paper se publica públicamente en la blockchain. Esto permite a cualquier receptor verificar que el hash asociado no haya sido registrado previamente. La exclusividad se garantiza manteniendo un registro público de todas las transacciones, de modo que cada nueva transacción pueda compararse con las anteriores.</p>
-    <p>El orden y la integridad de las transacciones dependen del consenso de los nodos de la red Bitcoin. Un receptor puede confiar en que la transacción verificada fue incluida primero en la blockchain, asegurando que corresponde al documento original. La blockchain provee una prueba pública, inmutable y verificable del momento y secuencia de cada publicación.</p>
-    <p>De este modo, cada Hash Paper puede ser verificado por cualquier parte interesada sin recurrir a un tercero confiable, asegurando la unicidad, integridad y trazabilidad de los documentos digitales.</p>
+        <h2>3. Servidor de marcas de tiempo</h2>
+        <p>Hash Paper certifica documentos tomando un hash criptográfico de un bloque de documentos y publicándolo de manera pública, por ejemplo, en la blockchain de Bitcoin. Cada marca de tiempo prueba que los documentos existían en un momento específico y asegura que solo existe una versión auténtica, evitando duplicaciones o doble gasto.</p>
+        <p>Cada nueva marca de tiempo incluye el hash de la anterior, formando una cadena inmutable, donde cada registro sucesivo refuerza la validez de todos los anteriores. Esto permite un sistema de documentos firmados electrónicamente, verificable públicamente, seguro y confiable sin intermediarios, siguiendo la misma lógica de confianza descentralizada de Bitcoin.</p>
 
-    <h3>2.1 Transacciones en Hash Paper</h3>
-    <p>Definimos un Hash Paper como un documento digital cuya validez se garantiza mediante un hash criptográfico registrado en la blockchain de Bitcoin. Cada documento puede ser transferido o actualizado mediante una transacción que incluye el hash del documento previo, la identidad del remitente y la clave pública del receptor.</p>
-    <p>Al igual que en Bitcoin, el desafío principal es evitar duplicados: un receptor debe poder confirmar que el documento no ha sido registrado en otra transacción diferente, equivalente al problema del doble-gasto en monedas digitales. En Bitcoin, la red de nodos valida cada transacción y acuerda un orden único de inclusión en la blockchain; en Hash Paper, utilizamos el mismo principio: cada transacción de hash se publica en la blockchain y se valida mediante consenso de los nodos, asegurando que solo la primera publicación de un hash se considere válida.</p>
-    <p>Cada transacción de Hash Paper funciona como una “entrada” en Bitcoin: incluye la referencia al documento anterior y la firma digital del remitente, análoga a la firma de una transacción de BTC. La red de Bitcoin actúa como autoridad distribuida para confirmar que la publicación del hash fue la primera y que no existen registros duplicados.</p>
-    <p>De esta manera, los receptores pueden verificar públicamente la integridad, unicidad y autenticidad de cada documento sin depender de un servidor central. La blockchain de Bitcoin proporciona prueba inmutable del momento y la secuencia de cada publicación, replicando la funcionalidad de verificación y orden de Bitcoin para garantizar que cada Hash Paper tenga un registro único y verificable.</p>
+        <h2>4. Prueba de Trabajo</h2>
+        <p>La Prueba de Trabajo en Hash Paper utiliza exactamente el mismo mecanismo que la red Bitcoin. Cada documento, ya sea digital o representativo de un activo físico, se normaliza y se calcula su hash criptográfico, que luego se incorpora en una transacción enviada a la red Bitcoin. La transacción, una vez incluida en un bloque validado mediante PoW, genera un txid único que actúa como prueba pública, inmutable y verificable de la existencia y singularidad del documento en un instante temporal definido.</p>
+        <p>Para optimizar costos y escalabilidad, múltiples documentos pueden agregarse mediante estructuras criptográficas como Merkle trees, permitiendo que una sola transacción on-chain represente la certificación de varios documentos, manteniendo la posibilidad de verificar individualmente cada uno mediante pruebas off-chain. La seguridad de Hash Paper se deriva completamente del coste económico y la resistencia a reescritura de la cadena de bloques de Bitcoin; alterar retroactivamente cualquier txid confirmado es impracticable sin controlar la mayoría del poder de cómputo de la red.</p>
+        <p>El txid generado y el bloque asociado constituyen la prueba técnica de existencia, integridad y autenticidad del documento. La verificación se realiza de forma pública mediante cualquier explorador de blockchain, y las pruebas criptográficas complementarias permiten rastrear la correspondencia exacta entre documento y txid, asegurando inmutabilidad, trazabilidad y resistencia a manipulaciones. Hash Paper no modifica la PoW ni su coste de seguridad; solo aprovecha la cadena Bitcoin como ancla confiable para documentos y activos digitales.</p>
 
-    <h2>3. Servidor de marcas de tiempo</h2>
-    <p>Hash Paper certifica documentos tomando un hash criptográfico de un bloque de documentos y publicándolo de manera pública, por ejemplo, en la blockchain de Bitcoin. Cada marca de tiempo prueba que los documentos existían en un momento específico y asegura que solo existe una versión auténtica, evitando duplicaciones o doble gasto.</p>
-    <p>Cada nueva marca de tiempo incluye el hash de la anterior, formando una cadena inmutable, donde cada registro sucesivo refuerza la validez de todos los anteriores. Esto permite un sistema de documentos firmados electrónicamente, verificable públicamente, seguro y confiable sin intermediarios, siguiendo la misma lógica de confianza descentralizada de Bitcoin.</p>
+        <h2>5. La Red</h2>
+        <p>La gestión de la red de Hash Paper sigue los mismos principios fundamentales que la red de Bitcoin, adaptados a la certificación de documentos digitales:</p>
+        <ul>
+            <li>Los nuevos documentos o actualizaciones de documentos se emiten a todos los nodos participantes.</li>
+            <li>Cada nodo recolecta estos documentos en un bloque para su validación y posterior registro.</li>
+            <li>Cada nodo trabaja en encontrar una prueba-de-trabajo compleja que garantice la integridad del bloque que contiene los documentos.</li>
+            <li>Cuando un nodo encuentra la prueba-de-trabajo, emite el bloque a todos los demás nodos.</li>
+            <li>Los nodos aceptan el bloque si todas las firmas y los hashes de los documentos son válidos y si no se ha producido ningún doble gasto, es decir, que no exista un documento con la misma identidad ya registrado previamente.</li>
+            <li>Los nodos expresan su aceptación del bloque trabajando en crear el siguiente bloque de la cadena, utilizando el hash del bloque aceptado como referencia previa.</li>
+        </ul>
+        <p>Los nodos siempre consideran la cadena más larga como la correcta y comienzan a extenderla. Si dos nodos publican bloques simultáneamente, algunos nodos pueden recibir uno antes que el otro; en ese caso, continúan trabajando en el primero recibido pero mantienen la otra rama por si se vuelve más larga. El conflicto se resuelve cuando se encuentra la próxima prueba-de-trabajo y una rama se convierte en la cadena más larga; los nodos que trabajaban en la rama más corta cambian entonces a la rama ganadora.</p>
+        <p>Las emisiones de nuevos documentos no necesitan alcanzar a todos los nodos de inmediato. Mientras lleguen a una mayoría, serán incluidos en un bloque en un tiempo razonable. Del mismo modo, la emisión de bloques es tolerante a pérdidas de mensajes: si un nodo no recibe un bloque, lo solicitará al recibir el siguiente bloque, detectando que falta uno en la secuencia.</p>
 
-    <h2>4. Prueba de Trabajo</h2>
-    <p>La Prueba de Trabajo en Hash Paper utiliza exactamente el mismo mecanismo que la red Bitcoin. Cada documento, ya sea digital o representativo de un activo físico, se normaliza y se calcula su hash criptográfico, que luego se incorpora en una transacción enviada a la red Bitcoin. La transacción, una vez incluida en un bloque validado mediante PoW, genera un <strong>txid</strong> único que actúa como prueba pública, inmutable y verificable de la existencia y singularidad del documento en un instante temporal definido.</p>
-    <p>Para optimizar costos y escalabilidad, múltiples documentos pueden agregarse mediante estructuras criptográficas como <strong>Merkle trees</strong>, permitiendo que una sola transacción on-chain represente la certificación de varios documentos, manteniendo la posibilidad de verificar individualmente cada uno mediante pruebas off-chain. La seguridad de Hash Paper se deriva completamente del coste económico y la resistencia a reescritura de la cadena de bloques de Bitcoin; alterar retroactivamente cualquier txid confirmado es impracticable sin controlar la mayoría del poder de cómputo de la red.</p>
-    <p>El txid generado y el bloque asociado constituyen la prueba técnica de existencia, integridad y autenticidad del documento. La verificación se realiza de forma pública mediante cualquier explorador de blockchain, y las pruebas criptográficas complementarias permiten rastrear la correspondencia exacta entre documento y txid, asegurando inmutabilidad, trazabilidad y resistencia a manipulaciones. Hash Paper no modifica la PoW ni su coste de seguridad; solo aprovecha la cadena Bitcoin como ancla confiable para documentos y activos digitales.</p>
+        <h2>6. Incentivo</h2>
+        <p>En Hash Paper, la mecánica de incentivo se adapta del concepto original de Bitcoin, pero con una finalidad específica: garantizar la autenticidad y la trazabilidad de documentos digitales, no la creación de una moneda. Por convención, cada bloque de Hash Paper puede incluir una transacción especial que representa un pago a una billetera empresarial que actúa como validador del documento. Este pago sirve como incentivo para que los nodos participantes procesen y certifiquen los documentos, asegurando que cada hash registrado en la blockchain de Bitcoin sea único y no pueda ser duplicado.</p>
+        <p>El incentivo en Hash Paper no crea nuevas monedas, sino que representa un valor económico real destinado a premiar la infraestructura y los recursos necesarios para emitir la prueba irrefutable de autenticidad. Además, las tarifas asociadas a cada transacción —si existieran— se añaden al incentivo del bloque, cubriendo los costos de procesamiento y garantizando la sostenibilidad de la red.</p>
+        <p>Este mecanismo de incentivo también fomenta la honestidad de los nodos: cualquier intento de duplicar, alterar o falsificar un documento se vuelve económicamente desventajoso, ya que el valor real está en la validación y certificación transparente del documento. De esta manera, Hash Paper asegura que cada transferencia representa una prueba confiable de autenticidad, manteniendo la integridad de la red y evitando la doble emisión de documentos.</p>
 
-    <h2>5. La Red</h2>
-    <p>La gestión de la red de Hash Paper sigue los mismos principios fundamentales que la red de Bitcoin, adaptados a la certificación de documentos digitales:</p>
-    <ol>
-        <li>Los nuevos documentos o actualizaciones de documentos se emiten a todos los nodos participantes.</li>
-        <li>Cada nodo recolecta estos documentos en un bloque para su validación y posterior registro.</li>
-        <li>Cada nodo trabaja en encontrar una prueba-de-trabajo compleja que garantice la integridad del bloque que contiene los documentos.</li>
-        <li>Cuando un nodo encuentra la prueba-de-trabajo, emite el bloque a todos los demás nodos.</li>
-        <li>Los nodos aceptan el bloque si todas las firmas y los hashes de los documentos son válidos y si no se ha producido ningún doble gasto, es decir, que no exista un documento con la misma identidad ya registrado previamente.</li>
-        <li>Los nodos expresan su aceptación del bloque trabajando en crear el siguiente bloque de la cadena, utilizando el hash del bloque aceptado como referencia previa.</li>
-    </ol>
-    <p>Los nodos siempre consideran la cadena más larga como la correcta y comienzan a extenderla. Si dos nodos publican bloques simultáneamente, algunos nodos pueden recibir uno antes que el otro; en ese caso, continúan trabajando en el primero recibido pero mantienen la otra rama por si se vuelve más larga. El conflicto se resuelve cuando se encuentra la próxima prueba-de-trabajo y una rama se convierte en la cadena más larga; los nodos que trabajaban en la rama más corta cambian entonces a la rama ganadora.</p>
-    <p>Las emisiones de nuevos documentos no necesitan alcanzar a todos los nodos de inmediato. Mientras lleguen a una mayoría, serán incluidos en un bloque en un tiempo razonable. Del mismo modo, la emisión de bloques es tolerante a pérdidas de mensajes: si un nodo no recibe un bloque, lo solicitará al recibir el siguiente bloque, detectando que falta uno en la secuencia.</p>
+        <h2>7. Reclamando Espacio en Disco</h2>
+        <p>Una vez que la última transacción que certifica un documento digital ha sido confirmada bajo suficientes bloques en la red de Bitcoin, las transacciones previas relacionadas con ese documento pueden ser descartadas para optimizar el uso de espacio en disco. Para permitir esto sin comprometer la integridad criptográfica de los bloques, las transacciones se organizan en un árbol Merkle, incluyendo únicamente la raíz del árbol en el hash del bloque.</p>
+        <p>Los bloques antiguos que contienen transacciones de Hash Paper pueden ser compactados, eliminando ramas del árbol Merkle cuya información ya no sea necesaria. Los hashes interiores de estas ramas no requieren almacenamiento, ya que la verificación de la raíz garantiza la integridad de los documentos certificados.</p>
+        <p>En este esquema, la cabecera de un bloque que ya no contiene transacciones activas tendría un tamaño aproximado de 80 bytes. Suponiendo un bloque generado cada 10 minutos, se requerirían $80 \text{ bytes} \times 6 \times 24 \times 365 \approx 4.2 \text{ MB}$ por año únicamente para las cabeceras. Dado que los equipos modernos poseen memoria y almacenamiento significativamente mayores, y considerando el crecimiento de la capacidad según la ley de Moore, mantener las cabeceras de los bloques en memoria no representa un obstáculo práctico para la operación de la red Hash Paper.</p>
 
-    <h2>6. Incentivo</h2>
-    <p>En Hash Paper, la mecánica de incentivo se adapta del concepto original de Bitcoin, pero con una finalidad específica: garantizar la autenticidad y la trazabilidad de documentos digitales, no la creación de una moneda. Por convención, cada bloque de Hash Paper puede incluir una transacción especial que representa un pago a una billetera empresarial que actúa como validador del documento. Este pago sirve como <strong>incentivo</strong> para que los nodos participantes procesen y certifiquen los documentos, asegurando que cada hash registrado en la blockchain de Bitcoin sea único y no pueda ser duplicado.</p>
-    <p>El incentivo en Hash Paper no crea nuevas monedas, sino que representa un valor económico real destinado a premiar la infraestructura y los recursos necesarios para emitir la prueba irrefutable de autenticidad. Además, las tarifas asociadas a cada transacción —si existieran— se añaden al incentivo del bloque, cubriendo los costos de procesamiento y garantizando la sostenibilidad de la red.</p>
-    <p>Este mecanismo de incentivo también fomenta la honestidad de los nodos: cualquier intento de duplicar, alterar o falsificar un documento se vuelve económicamente desventajoso, ya que el valor real está en la validación y certificación transparente del documento. De esta manera, Hash Paper asegura que cada transferencia representa una prueba confiable de autenticidad, manteniendo la integridad de la red y evitando la doble emisión de documentos.</p>
+        <h2>8. Verificación Simplificada de Documentos (Simplified Document Verification, SDV)</h2>
+        <p>Un nodo de Hash Paper no necesita almacenar ni procesar todas las transacciones de todos los bloques para verificar la validez de un documento. Es suficiente con conocer las cabeceras de los bloques y tener acceso a la ruta de Merkle que conecta la transacción del documento con la raíz Merkle del bloque correspondiente.</p>
+        <p>Este método, que denominamos **Verificación Simplificada de Documentos (SDV)**, permite a los usuarios comprobar de manera confiable que un documento ha sido certificado en la blockchain de Bitcoin sin requerir un nodo completo que contenga todas las transacciones de Hash Paper. La SDV garantiza que, incluso con recursos limitados, un usuario puede verificar:</p>
+        <ul>
+            <li>La existencia de un documento en un bloque específico.</li>
+            <li>Que dicho documento no ha sido alterado desde su registro.</li>
+            <li>Que la cadena de bloques que respalda el documento no ha sido reorganizada maliciosamente.</li>
+        </ul>
 
-    <h2>7. Reclamando Espacio en Disco</h2>
-    <p>Una vez que la última transacción que certifica un documento digital ha sido confirmada bajo suficientes bloques en la red de Bitcoin, las transacciones previas relacionadas con ese documento pueden ser descartadas para optimizar el uso de espacio en disco. Para permitir esto sin comprometer la integridad criptográfica de los bloques, las transacciones se organizan en un árbol Merkle, incluyendo únicamente la raíz del árbol en el hash del bloque.</p>
-    <p>Los bloques antiguos que contienen transacciones de Hash Paper pueden ser compactados, eliminando ramas del árbol Merkle cuya información ya no sea necesaria. Los hashes interiores de estas ramas no requieren almacenamiento, ya que la verificación de la raíz garantiza la integridad de los documentos certificados.</p>
-    <p>En este esquema, la cabecera de un bloque que ya no contiene transacciones activas tendría un tamaño aproximado de 80 bytes. Suponiendo un bloque generado cada 10 minutos, se requerirían 80 bytes × 6 × 24 × 365 ≈ 4.2 MB por año únicamente para las cabeceras. Dado que los equipos modernos poseen memoria y almacenamiento significativamente mayores, y considerando el crecimiento de la capacidad según la ley de Moore, mantener las cabeceras de los bloques en memoria no representa un obstáculo práctico para la operación de la red Hash Paper.</p>
+        <h2>9. Combinando y Dividiendo el Valor en la Red de Bitcoin (Adaptado a Hash Paper)</h2>
+        <p>En Bitcoin, las transacciones pueden combinar múltiples entradas de monedas previas y dividirlas en nuevas salidas para el próximo propietario, permitiendo que una sola transacción represente varios pagos o fracciones de monedas. Este mecanismo asegura que cada unidad de valor tenga un registro único y rastreable, evitando doble gasto.</p>
+        <p>En Hash Paper, el concepto se adapta a documentos digitales certificados:</p>
+        <ul>
+            <li>**Combinación de documentos:** Es posible que un bloque contenga un hash que represente múltiples documentos o versiones previas de un mismo documento. De esta forma, una sola transacción en la red de Bitcoin puede certificar la existencia y propiedad de varios documentos a la vez.</li>
+            <li>**División de documentos:** Un documento puede ser actualizado o fragmentado en múltiples versiones, cada una con su propio hash. Cada hash individual puede ser incluido en transacciones separadas o combinadas en un bloque, garantizando que cada versión mantenga un registro único y verificable.</li>
+        </ul>
+        <p>Así, la red de Bitcoin actúa como referencia irrefutable de autenticidad y orden temporal, mientras que Hash Paper utiliza esta funcionalidad para:</p>
+        <ul>
+            <li>Evitar que un documento certificado sea reclamado o reproducido más de una vez.</li>
+            <li>Permitir que múltiples documentos o versiones sean certificados de manera eficiente en una sola transacción.</li>
+            <li>Mantener un historial verificable de propiedad, transferencias y actualizaciones de cada documento, sin necesidad de almacenar todos los datos off-chain dentro de la blockchain.</li>
+        </ul>
+        <p>En resumen, la “combinación y división del valor” en Hash Paper traduce la lógica de Bitcoin a la gestión de documentos: una sola transacción puede representar muchas certificaciones, y un documento puede dividirse o actualizarse manteniendo siempre la unicidad y trazabilidad garantizada por la blockchain de Bitcoin.</p>
 
-    <h2>8. Verificación Simplificada de Documentos (Simplified Document Verification, SDV)</h2>
-    <p>Un nodo de Hash Paper no necesita almacenar ni procesar todas las transacciones de todos los bloques para verificar la validez de un documento. Es suficiente con conocer las cabeceras de los bloques y tener acceso a la ruta de Merkle que conecta la transacción del documento con la raíz Merkle del bloque correspondiente.</p>
-    <p>Este método, que denominamos <strong>Verificación Simplificada de Documentos (SDV)</strong>, permite a los usuarios comprobar de manera confiable que un documento ha sido certificado en la blockchain de Bitcoin sin requerir un nodo completo que contenga todas las transacciones de Hash Paper. La SDV garantiza que, incluso con recursos limitados, un usuario puede verificar:</p>
-    <ul>
-        <li>La existencia de un documento en un bloque específico.</li>
-        <li>Que dicho documento no ha sido alterado desde su registro.</li>
-        <li>Que la cadena de bloques que respalda el documento no ha sido reorganizada maliciosamente.</li>
-    </ul>
+        <h2>10. Privacidad en Bitcoin</h2>
+        <p>En Bitcoin, la privacidad se logra mediante el uso de direcciones públicas en lugar de identidades reales. Cada transacción registra:</p>
+        <ul>
+            <li>**Quién envía:** la clave pública del remitente.</li>
+            <li>**Quién recibe:** la clave pública del destinatario.</li>
+            <li>**Cantidad transferida:** el valor de bitcoins enviado.</li>
+        </ul>
+        <p>Aunque estas transacciones son públicas y auditable en la blockchain, no contienen nombres ni información personal directamente vinculada. Sin embargo:</p>
+        <ul>
+            <li>**Pseudonimato:** Cada usuario puede usar varias direcciones para separar transacciones y dificultar la vinculación de sus operaciones.</li>
+            <li>**Transparencia vs. privacidad:** Todas las transacciones pueden ser vistas y verificadas por cualquiera, pero solo se puede inferir identidad si se cruzan datos externos (por ejemplo, exchanges o servicios KYC).</li>
+            <li>**Limitaciones:** La privacidad no es absoluta; patrones de transacciones pueden revelar relaciones entre direcciones y permitir análisis de comportamiento financiero.</li>
+        </ul>
+        <p>En esencia, Bitcoin ofrece confidencialidad relativa, donde las transacciones son públicas pero las identidades reales permanecen ocultas si se gestionan correctamente las direcciones.</p>
 
-    <h2>9. Combinando y Dividiendo el Valor en la Red de Bitcoin (Adaptado a Hash Paper)</h2>
-    <p>En Bitcoin, las transacciones pueden combinar múltiples entradas de monedas previas y dividirlas en nuevas salidas para el próximo propietario, permitiendo que una sola transacción represente varios pagos o fracciones de monedas. Este mecanismo asegura que cada unidad de valor tenga un registro único y rastreable, evitando doble gasto.</p>
-    <p>En Hash Paper, el concepto se adapta a documentos digitales certificados:</p>
-    <ul>
-        <li><strong>Combinación de documentos:</strong> Es posible que un bloque contenga un hash que represente múltiples documentos o versiones previas de un mismo documento. De esta forma, una sola transacción en la red de Bitcoin puede certificar la existencia y propiedad de varios documentos a la vez.</li>
-        <li><strong>División de documentos:</strong> Un documento puede ser actualizado o fragmentado en múltiples versiones, cada una con su propio hash. Cada hash individual puede ser incluido en transacciones separadas o combinadas en un bloque, garantizando que cada versión mantenga un registro único y verificable.</li>
-    </ul>
-    <p>Así, la red de Bitcoin actúa como referencia irrefutable de autenticidad y orden temporal, mientras que Hash Paper utiliza esta funcionalidad para:</p>
-    <ol>
-        <li>Evitar que un documento certificado sea reclamado o reproducido más de una vez.</li>
-        <li>Permitir que múltiples documentos o versiones sean certificados de manera eficiente en una sola transacción.</li>
-        <li>Mantener un historial verificable de propiedad, transferencias y actualizaciones de cada documento, sin necesidad de almacenar todos los datos off-chain dentro de la blockchain.</li>
-    </ol>
-    <p>En resumen, la “combinación y división del valor” en Hash Paper traduce la lógica de Bitcoin a la gestión de documentos: una sola transacción puede representar muchas certificaciones, y un documento puede dividirse o actualizarse manteniendo siempre la unicidad y trazabilidad garantizada por la blockchain de Bitcoin.</p>
+        <h3>Adaptación al Hash Paper</h3>
+        <p>En Hash Paper, la privacidad se aplica a los documentos digitales certificados de la siguiente manera:</p>
+        <ul>
+            <li>**Documentos vinculados a hashes, no a identidades:** Cada documento se transforma en un hash único que se publica en la blockchain de Bitcoin. La transacción contiene únicamente este hash, sin revelar el contenido del documento ni la identidad del propietario.</li>
+            <li>**Pseudonimato de los usuarios:** Los certificados de documentos se registran usando claves públicas, manteniendo el anonimato de los emisores y receptores de documentos.</li>
+            <li>**Seguridad y transparencia:** Cualquiera puede verificar la existencia y autenticidad del documento mediante el hash en la blockchain, pero no puede acceder al contenido completo del documento ni a la identidad del propietario sin autorización.</li>
+            <li>**Manejo de versiones o actualizaciones:** Cada actualización de un documento genera un nuevo hash y una nueva transacción, manteniendo el historial verificable sin revelar información privada.</li>
+        </ul>
+        <p>En resumen, Hash Paper hereda el pseudonimato y la transparencia de Bitcoin, garantizando que los documentos certificados sean verificables y únicos, mientras se protege la privacidad de su contenido y de sus propietarios.</p>
 
-    <h2>10. Privacidad en Bitcoin</h2>
-    <p>En Bitcoin, la privacidad se logra mediante el uso de direcciones públicas en lugar de identidades reales. Cada transacción registra:</p>
-    <ul>
-        <li>Quién envía: la clave pública del remitente.</li>
-        <li>Quién recibe: la clave pública del destinatario.</li>
-        <li>Cantidad transferida: el valor de bitcoins enviado.</li>
-    </ul>
-    <p>Aunque estas transacciones son públicas y auditable en la blockchain, no contienen nombres ni información personal directamente vinculada. Sin embargo:</p>
-    <ul>
-        <li><strong>Pseudonimato:</strong> Cada usuario puede usar varias direcciones para separar transacciones y dificultar la vinculación de sus operaciones.</li>
-        <li><strong>Transparencia vs. privacidad:</strong> Todas las transacciones pueden ser vistas y verificadas por cualquiera, pero solo se puede inferir identidad si se cruzan datos externos (por ejemplo, exchanges o servicios KYC).</li>
-        <li><strong>Limitaciones:</strong> La privacidad no es absoluta; patrones de transacciones pueden revelar relaciones entre direcciones y permitir análisis de comportamiento financiero.</li>
-    </ul>
-    <p>En esencia, Bitcoin ofrece confidencialidad relativa, donde las transacciones son públicas pero las identidades reales permanecen ocultas si se gestionan correctamente las direcciones.</p>
+        <h2>11. Cálculos en la red Bitcoin</h2>
+        <p>En Bitcoin, los cálculos se refieren a la prueba de trabajo (Proof-of-Work, PoW) que los nodos deben resolver para añadir un bloque a la blockchain:</p>
+        <ul>
+            <li>**Objetivo de los cálculos:**
+                <ul>
+                    <li>Los nodos buscan un valor llamado *nonce* que, combinado con los datos del bloque (cabecera y transacciones), produzca un hash que cumpla con un nivel de dificultad predeterminado (una cantidad mínima de ceros al inicio del hash).</li>
+                </ul>
+            </li>
+            <li>**Ajuste de dificultad:**
+                <ul>
+                    <li>Cada 2016 bloques (~2 semanas), la red ajusta la dificultad para que los bloques continúen generándose aproximadamente cada 10 minutos, manteniendo la estabilidad y seguridad de la red.</li>
+                </ul>
+            </li>
+            <li>**Propósito:**
+                <ul>
+                    <li>Garantiza que crear un bloque sea costoso en términos de computación, lo que protege la red contra ataques como la doble emisión de monedas (*double-spending*).</li>
+                    <li>Permite que todos los nodos lleguen a un consenso descentralizado sobre el estado de la blockchain sin necesidad de confiar en un tercero.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>En resumen, los cálculos en Bitcoin son pruebas computacionales que aseguran la integridad de la red y el orden cronológico de las transacciones.</p>
 
-    <h3>Adaptación al Hash Paper</h3>
-    <p>En Hash Paper, la privacidad se aplica a los documentos digitales certificados de la siguiente manera:</p>
-    <ol>
-        <li><strong>Documentos vinculados a hashes, no a identidades:</strong> Cada documento se transforma en un hash único que se publica en la blockchain de Bitcoin. La transacción contiene únicamente este hash, sin revelar el contenido del documento ni la identidad del propietario.</li>
-        <li><strong>Pseudonimato de los usuarios:</strong> Los certificados de documentos se registran usando claves públicas, manteniendo el anonimato de los emisores y receptores de documentos.</li>
-        <li><strong>Seguridad y transparencia:</strong> Cualquiera puede verificar la existencia y autenticidad del documento mediante el hash en la blockchain, pero no puede acceder al contenido completo del documento ni a la identidad del propietario sin autorización.</li>
-        <li><strong>Manejo de versiones o actualizaciones:</strong> Cada actualización de un documento genera un nuevo hash y una nueva transacción, manteniendo el historial verificable sin revelar información privada.</li>
-    </ol>
-    <p>En resumen, Hash Paper hereda el pseudonimato y la transparencia de Bitcoin, garantizando que los documentos certificados sean verificables y únicos, mientras se protege la privacidad de su contenido y de sus propietarios.</p>
+        <h3>Adaptación al Hash Paper</h3>
+        <p>En Hash Paper, los cálculos funcionan exactamente igual, pero con un objetivo centrado en los documentos:</p>
+        <ul>
+            <li>**Prueba de existencia y unicidad:**
+                <ul>
+                    <li>Cada documento certificado genera un hash que se incluye en la blockchain de Bitcoin.</li>
+                    <li>Los nodos realizan PoW para incluir este hash en un bloque, asegurando que la certificación del documento sea única, inmutable y verificable.</li>
+                </ul>
+            </li>
+            <li>**Inclusión de múltiples documentos (off-chain):**
+                <ul>
+                    <li>Una sola transacción puede representar muchos documentos o versiones mediante hashes agregados.</li>
+                    <li>Los cálculos de PoW aseguran que todas las certificaciones contenidas en ese bloque sean válidas y ordenadas cronológicamente, aunque los documentos reales residan fuera de la blockchain (*off-chain*).</li>
+                </ul>
+            </li>
+            <li>**Seguridad y consenso:**
+                <ul>
+                    <li>La dificultad ajustada de la red Bitcoin garantiza que ningún nodo pueda alterar, duplicar o falsificar certificados de documentos sin gastar enormes recursos computacionales.</li>
+                    <li>Todos los usuarios de Hash Paper pueden confiar en que la secuencia de documentos certificados refleja la verdad histórica, gracias a la misma seguridad criptográfica de Bitcoin.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>En resumen, los cálculos en Hash Paper son pruebas de trabajo sobre hashes de documentos, replicando la seguridad y confiabilidad de Bitcoin, pero aplicados a la certificación y trazabilidad de documentos digitales.</p>
 
-    <h2>11. Cálculos en la red Bitcoin</h2>
-    <p>En Bitcoin, los cálculos se refieren a la prueba de trabajo (Proof-of-Work, PoW) que los nodos deben resolver para añadir un bloque a la blockchain:</p>
-    <ol>
-        <li><strong>Objetivo de los cálculos:</strong> Los nodos buscan un valor llamado <em>nonce</em> que, combinado con los datos del bloque (cabecera y transacciones), produzca un hash que cumpla con un nivel de dificultad predeterminado (una cantidad mínima de ceros al inicio del hash).</li>
-        <li><strong>Ajuste de dificultad:</strong> Cada 2016 bloques (~2 semanas), la red ajusta la dificultad para que los bloques continúen generándose aproximadamente cada 10 minutos, manteniendo la estabilidad y seguridad de la red.</li>
-        <li><strong>Propósito:</strong> Garantiza que crear un bloque sea costoso en términos de computación, lo que protege la red contra ataques como la doble emisión de monedas (<em>double-spending</em>). Permite que todos los nodos lleguen a un consenso descentralizado sobre el estado de la blockchain sin necesidad de confiar en un tercero.</li>
-    </ol>
-    <p>En resumen, los cálculos en Bitcoin son pruebas computacionales que aseguran la integridad de la red y el orden cronológico de las transacciones.</p>
+        <h2>12. Off‑chain y aplicación práctica: pedidos con verificación Bitcoin</h2>
 
-    <h3>Adaptación al Hash Paper</h3>
-    <p>En Hash Paper, los cálculos funcionan exactamente igual, pero con un objetivo centrado en los documentos:</p>
-    <ol>
-        <li><strong>Prueba de existencia y unicidad:</strong> Cada documento certificado genera un hash que se incluye en la blockchain de Bitcoin. Los nodos realizan PoW para incluir este hash en un bloque, asegurando que la certificación del documento sea única, inmutable y verificable.</li>
-        <li><strong>Inclusión de múltiples documentos (off-chain):</strong> Una sola transacción puede representar muchos documentos o versiones mediante hashes agregados. Los cálculos de PoW aseguran que todas las certificaciones contenidas en ese bloque sean válidas y ordenadas cronológicamente, aunque los documentos reales residan fuera de la blockchain (off-chain).</li>
-        <li><strong>Seguridad y consenso:</strong> La dificultad ajustada de la red Bitcoin garantiza que ningún nodo pueda alterar, duplicar o falsificar certificados de documentos sin gastar enormes recursos computacionales. Todos los usuarios de Hash Paper pueden confiar en que la secuencia de documentos certificados refleja la verdad histórica, gracias a la misma seguridad criptográfica de Bitcoin.</li>
-    </ol>
-    <p>En resumen, los cálculos en Hash Paper son pruebas de trabajo sobre hashes de documentos, replicando la seguridad y confiabilidad de Bitcoin, pero aplicados a la certificación y trazabilidad de documentos digitales.</p>
+        <h3>12.1 Resumen</h3>
+        <p>Hash Paper permite agrupar múltiples operaciones o documentos de distintos clientes en un único compromiso *on‑chain* publicado en la blockchain de Bitcoin. Cada cliente accede a su información mediante una contraseña de lectura, que habilita el descifrado de la porción correspondiente dentro del conjunto comprometido. Este modelo garantiza integridad, privacidad y trazabilidad sin necesidad de almacenar todos los datos directamente en la cadena.</p>
 
-    <h2>12. Off‑chain y aplicación práctica: pedidos con verificación Bitcoin</h2>
+        <h3>12.2 Caso práctico: pedidos de Amazon</h3>
+        <p>Cuando un cliente realiza un pedido en Amazon y selecciona la opción de verificación mediante la red Bitcoin:</p>
+        <ol>
+            <li>**Creación del registro de pedido:**
+                <ul>
+                    <li>Cada pedido se representa como un objeto digital $O_i$, que incluye información del pedido: ítems, dirección de envío, fecha de compra y metadatos internos.</li>
+                    <li>El cliente proporciona una contraseña $P_i$ para acceder a su información específica.</li>
+                </ul>
+            </li>
+            <li>**Cifrado *off‑chain***:
+                <ul>
+                    <li>$O_i$ se cifra usando una clave derivada de $P_i$ mediante un KDF seguro $\to$ produce $C_i$.</li>
+                    <li>Este cifrado asegura que los datos del pedido sean ilegibles para terceros sin la contraseña.</li>
+                </ul>
+            </li>
+            <li>**Agregación de pedidos y compromiso *on‑chain***:
+                <ul>
+                    <li>Varios $C_i$ se agrupan en un lote.</li>
+                    <li>Se construye un árbol Merkle con $H(C_i || \text{meta}_i)$ como hojas.</li>
+                    <li>La raíz Merkle $R$ se publica en la blockchain de Bitcoin mediante una transacción única (TXID), sirviendo como prueba irrefutable del conjunto de pedidos existentes en ese momento.</li>
+                </ul>
+            </li>
+            <li>**Almacenamiento *off‑chain***:
+                <ul>
+                    <li>El *blob* que contiene todos los $C_i$, sus metadatos y pruebas de inclusión se almacena en servidores o nodos distribuidos *off‑chain*.</li>
+                    <li>Cada cliente recibe un identificador o QR asociado a su entrada y al *hash* de compromiso $R$ publicado en Bitcoin.</li>
+                </ul>
+            </li>
+            <li>**Verificación al recibir el paquete:**
+                <ul>
+                    <li>Al llegar el paquete, el cliente escanea el QR que lo dirige a su entrada en el *blob off‑chain*.</li>
+                    <li>**Inclusión mínima visible:** incluso sin introducir la contraseña, el sistema le indica al cliente que el paquete recibido está efectivamente incluido en el Hash Paper, confirmando su existencia en el compromiso *on‑chain*.</li>
+                    <li>**Acceso a detalles completos:** si el cliente desea ver los detalles de su pedido (ítems, dirección de envío, metadatos internos), debe introducir su contraseña $P_i$, que permite descifrar $C_i$ y verificar que $H(C_i || \text{meta}_i)$ pertenece a la raíz $R$ publicada (TXID).</li>
+                </ul>
+            </li>
+        </ol>
 
-    <h3>12.1 Resumen</h3>
-    <p>Hash Paper permite agrupar múltiples operaciones o documentos de distintos clientes en un único compromiso <strong>on‑chain</strong> publicado en la blockchain de Bitcoin. Cada cliente accede a su información mediante una contraseña de lectura, que habilita el descifrado de la porción correspondiente dentro del conjunto comprometido. Este modelo garantiza integridad, privacidad y trazabilidad sin necesidad de almacenar todos los datos directamente en la cadena.</p>
+        <h3>12.3 Beneficios del modelo</h3>
+        <ul>
+            <li>**Integridad y no repudio:** la publicación en Bitcoin garantiza que los pedidos no han sido alterados y existían en un momento dado.</li>
+            <li>**Privacidad:** los pedidos permanecen cifrados *off‑chain*, accesibles únicamente con la contraseña proporcionada por el cliente.</li>
+            <li>**Escalabilidad:** un solo compromiso en Bitcoin puede representar miles de pedidos de clientes.</li>
+            <li>**Auditoría independiente:** cualquier verificador puede comprobar la inclusión de un pedido mediante la prueba Merkle y el TXID, sin necesidad de conocer el contenido cifrado.</li>
+            <li>**Confirmación parcial inmediata:** el cliente puede validar que su paquete forma parte del compromiso sin necesidad de revelar la contraseña, lo que proporciona seguridad y confianza instantánea.</li>
+        </ul>
 
-    <h3>12.2 Caso práctico: pedidos de Amazon</h3>
-    <p>Cuando un cliente realiza un pedido en Amazon y selecciona la opción de verificación mediante la red Bitcoin:</p>
-    <ol>
-        <li><strong>Creación del registro de pedido:</strong> Cada pedido se representa como un objeto digital O<sub>i</sub>, que incluye información del pedido: ítems, dirección de envío, fecha de compra y metadatos internos. El cliente proporciona una contraseña P<sub>i</sub> para acceder a su información específica.</li>
-        <li><strong>Cifrado off‑chain:</strong> O<sub>i</sub> se cifra usando una clave derivada de P<sub>i</sub> mediante un KDF seguro → produce C<sub>i</sub>. Este cifrado asegura que los datos del pedido sean ilegibles para terceros sin la contraseña.</li>
-        <li><strong>Agregación de pedidos y compromiso on‑chain:</strong> Varios C<sub>i</sub> se agrupan en un lote. Se construye un árbol Merkle con H(C<sub>i</sub> || meta<sub>i</sub>) como hojas. La raíz Merkle <strong>R</strong> se publica en la blockchain de Bitcoin mediante una transacción única (<strong>TXID</strong>), sirviendo como prueba irrefutable del conjunto de pedidos existentes en ese momento.</li>
-        <li><strong>Almacenamiento off‑chain:</strong> El blob que contiene todos los C<sub>i</sub>, sus metadatos y pruebas de inclusión se almacena en servidores o nodos distribuidos off‑chain. Cada cliente recibe un identificador o QR asociado a su entrada y al hash de compromiso <strong>R</strong> publicado en Bitcoin.</li>
-        <li><strong>Verificación al recibir el paquete:</strong> Al llegar el paquete, el cliente escanea el QR que lo dirige a su entrada en el blob off‑chain.
-            <ul>
-                <li><strong>Inclusión mínima visible:</strong> incluso sin introducir la contraseña, el sistema le indica al cliente que el paquete recibido está efectivamente incluido en el Hash Paper, confirmando su existencia en el compromiso on‑chain.</li>
-                <li><strong>Acceso a detalles completos:</strong> si el cliente desea ver los detalles de su pedido (ítems, dirección de envío, metadatos internos), debe introducir su contraseña P<sub>i</sub>, que permite descifrar C<sub>i</sub> y verificar que H(C<sub>i</sub> || meta<sub>i</sub>) pertenece a la raíz R publicada (TXID).</li>
-            </ul>
-        </li>
-    </ol>
-
-    <h3>12.3 Beneficios del modelo</h3>
-    <ul>
-        <li><strong>Integridad y no repudio:</strong> la publicación en Bitcoin garantiza que los pedidos no han sido alterados y existían en un momento dado.</li>
-        <li><strong>Privacidad:</strong> los pedidos permanecen cifrados off‑chain, accesibles únicamente con la contraseña proporcionada por el cliente.</li>
-        <li><strong>Escalabilidad:</strong> un solo compromiso en Bitcoin puede representar miles de pedidos de clientes.</li>
-        <li><strong>Auditoría independiente:</strong> cualquier verificador puede comprobar la inclusión de un pedido mediante la prueba Merkle y el TXID, sin necesidad de conocer el contenido cifrado.</li>
-        <li><strong>Confirmación parcial inmediata:</strong> el cliente puede validar que su paquete forma parte del compromiso sin necesidad de revelar la contraseña, lo que proporciona seguridad y confianza instantánea.</li>
-    </ul>
-
-    <h3>12.4 Flujo operativo</h3>
-    <pre>
+        <h3>12.4 Flujo operativo</h3>
+        <pre><code>
 Cliente Amazon
-   └─> Indica contraseña P_i y realiza pedido
-       └─> O_i (datos del pedido)
-           └─> C_i = cifrado(O_i, K_i derivada de P_i)
-               └─> Agregación de varios C_i → Árbol Merkle → raíz R
-                   └─> Publicación de R en Bitcoin (TXID)
-                       └─> Blob off-chain con C_i y pruebas de inclusión
+   └─> Indica contraseña P_i y realiza pedido
+       └─> O_i (datos del pedido)
+           └─> C_i = cifrado(O_i, K_i derivada de P_i)
+               └─> Agregación de varios C_i → Árbol Merkle → raíz R
+                   └─> Publicación de R en Bitcoin (TXID)
+                       └─> Blob off-chain con C_i y pruebas de inclusión
 
 Cliente recibe paquete
-   └─> Escanea QR → verifica inclusión en Hash Paper (sin contraseña)
-       └─> Si desea detalles → introduce contraseña P_i
-           └─> Descifra C_i y verifica inclusión en R/TXID
-    </pre>
+   └─> Escanea QR → verifica inclusión en Hash Paper (sin contraseña)
+       └─> Si desea detalles → introduce contraseña P_i
+           └─> Descifra C_i y verifica inclusión en R/TXID
+        </code></pre>
 
-    <h3>12.5 Consideraciones adicionales</h3>
-    <ul>
-        <li>La cadencia de publicación de raíces on‑chain determina la latencia de verificación y la eficiencia de costos.</li>
-        <li>Cada C<sub>i</sub> incluye metadatos y salts que permiten la derivación de claves y pruebas de inclusión sin exponer información sensible.</li>
-        <li>El modelo permite auditoría completa y trazabilidad de los pedidos sin comprometer la privacidad ni la escalabilidad.</li>
-        <li>La inclusión mínima visible permite que el cliente tenga confianza inmediata de que el paquete está certificado en la blockchain, incluso antes de ingresar su contraseña.</li>
-    </ul>
+        <h3>12.5 Consideraciones adicionales</h3>
+        <ul>
+            <li>La cadencia de publicación de raíces *on‑chain* determina la latencia de verificación y la eficiencia de costos.</li>
+            <li>Cada $C_i$ incluye metadatos y *salts* que permiten la derivación de claves y pruebas de inclusión sin exponer información sensible.</li>
+            <li>El modelo permite auditoría completa y trazabilidad de los pedidos sin comprometer la privacidad ni la escalabilidad.</li>
+            <li>La inclusión mínima visible permite que el cliente tenga confianza inmediata de que el paquete está certificado en la *blockchain*, incluso antes de ingresar su contraseña.</li>
+        </ul>
 
-    <h3>12.6 Conclusión</h3>
-    <p>El sistema off‑chain de Hash Paper permite que un único hash en Bitcoin represente múltiples pedidos de clientes, garantizando integridad, autenticidad y privacidad. La contraseña del cliente habilita el acceso a su información detallada, mientras que la publicación on‑chain actúa como sello temporal y prueba irrefutable de existencia, alineándose con la filosofía de documentos firmados electrónicamente y proporcionando confianza inmediata mediante la verificación parcial visible.</p>
+        <h3>12.6 Conclusión</h3>
+        <p>El sistema *off‑chain* de Hash Paper permite que un único *hash* en Bitcoin represente múltiples pedidos de clientes, garantizando integridad, autenticidad y privacidad. La contraseña del cliente habilita el acceso a su información detallada, mientras que la publicación *on‑chain* actúa como sello temporal y prueba irrefutable de existencia, alineándose con la filosofía de documentos firmados electrónicamente y proporcionando confianza inmediata mediante la verificación parcial visible.</p>
 
-    <h2>13. Conclusiones</h2>
-    <p>El sistema Hash Paper for Bitcoin representa una extensión directa de los principios fundamentales de Bitcoin aplicados a la certificación de documentos electrónicos. Su diseño permite que cualquier usuario pueda generar, verificar y certificar documentos de manera irrefutable y descentralizada, aprovechando la solidez y seguridad de la red Bitcoin, sin necesidad de intermediarios.</p>
-    <p>Hash Paper asegura que cada documento es único y verificable, integrando firmas digitales, marcas de tiempo y referencias criptográficas en transacciones de Bitcoin que actúan como prueba de existencia y autenticidad. La implementación de prueba de trabajo garantiza que las transacciones que contienen los hashes de los documentos sean confiables, evitando manipulaciones o dobles gastos, mientras que el sistema off-chain permite agilizar la gestión de múltiples documentos mediante un único registro en la blockchain.</p>
-    <p>La utilización de códigos QR y contraseñas opcionales permite a los usuarios finales, como compradores de productos o receptores de documentos, verificar la autenticidad de forma inmediata, incluso sin exponer información sensible, garantizando privacidad y control sobre los datos.</p>
-    <p>En términos de innovación, Hash Paper aplica un modelo probado de Bitcoin a un contexto práctico de certificación digital, abriendo oportunidades para la trazabilidad de documentos, logística de paquetes, contratos electrónicos y cualquier escenario que requiera prueba irrefutable de existencia y propiedad. Al aprovechar la red más segura y descentralizada del mundo, el sistema asegura resiliencia, transparencia y confianza a nivel global, estableciendo un estándar de referencia para documentos firmados electrónicamente usuario-a-usuario.</p>
-    <p>En conclusión, Hash Paper no solo adapta los conceptos de Bitcoin a la certificación documental, sino que extiende la utilidad de la blockchain a la vida cotidiana, ofreciendo un método seguro, verificable y descentralizado para la gestión de información crítica, con potencial de adopción masiva en múltiples sectores.</p>
+        <h2>13. Conclusiones</h2>
+        <p>El sistema Hash Paper for Bitcoin representa una extensión directa de los principios fundamentales de Bitcoin aplicados a la certificación de documentos electrónicos. Su diseño permite que cualquier usuario pueda generar, verificar y certificar documentos de manera irrefutable y descentralizada, aprovechando la solidez y seguridad de la red Bitcoin, sin necesidad de intermediarios.</p>
+        <p>Hash Paper asegura que cada documento es único y verificable, integrando firmas digitales, marcas de tiempo y referencias criptográficas en transacciones de Bitcoin que actúan como prueba de existencia y autenticidad. La implementación de prueba de trabajo garantiza que las transacciones que contienen los hashes de los documentos sean confiables, evitando manipulaciones o dobles gastos, mientras que el sistema *off-chain* permite agilizar la gestión de múltiples documentos mediante un único registro en la *blockchain*.</p>
+        <p>La utilización de códigos QR y contraseñas opcionales permite a los usuarios finales, como compradores de productos o receptores de documentos, verificar la autenticidad de forma inmediata, incluso sin exponer información sensible, garantizando privacidad y control sobre los datos.</p>
+        <p>En términos de innovación, Hash Paper aplica un modelo probado de Bitcoin a un contexto práctico de certificación digital, abriendo oportunidades para la trazabilidad de documentos, logística de paquetes, contratos electrónicos y cualquier escenario que requiera prueba irrefutable de existencia y propiedad. Al aprovechar la red más segura y descentralizada del mundo, el sistema asegura resiliencia, transparencia y confianza a nivel global, estableciendo un estándar de referencia para documentos firmados electrónicamente usuario-a-usuario.</p>
+        <p>En conclusión, Hash Paper no solo adapta los conceptos de Bitcoin a la certificación documental, sino que extiende la utilidad de la *blockchain* a la vida cotidiana, ofreciendo un método seguro, verificable y descentralizado para la gestión de información crítica, con potencial de adopción masiva en múltiples sectores.</p>
 
-    <div class="authors" style="text-align: right; margin-top: 50px;">
-        <p>byLAEV</p>
-        <p>31/10/2025</p>
+        <footer>
+            <p>**byLAEV**</p>
+            <p>31/10/2025</p>
+        </footer>
+
     </div>
 
 </body>
